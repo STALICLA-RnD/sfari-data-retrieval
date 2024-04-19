@@ -1,18 +1,24 @@
-# A template for writing scientific papers
-<a href="https://doi.org/10.5281/zenodo.231328"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.231328.svg" alt="DOI"></a>
+![](images/STALICLA_logo_color.png){width="173"}
 
-View it in action here:
-https://andrewgyork.github.io/publication_template/
+![](images/logotip-versio-1-principal-verd-1401x489.png){width="103"}
 
-This repository is intended to hold a (mostly) self-contained scientific publication. It contains:
+# SFARI Gene Web Scrapper
 
-* HTML, javascript, and small images (index.html, and in the javascript and images directories)
-* Code which produces figures (in the `figure_code` directory)
+[![DOI:\<your number\>]([http://img.shields.io/badge/DOI-\<your](http://img.shields.io/badge/DOI-<your) number\>-\<#94A9C3\>.svg)](\<doi link\>)
 
-Some files aren't suitable for version control, (e.g. raw data, large numbers of pre-rendered figure images, etc). These are stored in a sister repository:
+This repository contains the codes employed for the obtention of the data in the SFARI gene website, an evolving online database designed to permit quick entrance into the genetics of neurodevelopmental disorders (NDDs), and to help researchers track the genetic risk factors emergin from most recent studies.
 
-https://github.com/AndrewGYork/publication_template_data
+The scrappers where used to obtain both patient and population level data on copy number variation (CNVs), and were used on the versions of the website from 2020, including the updated current catalog of risk CNVs, and the archived version.
 
-Hopefully this makes it easier to nuke the version control history for big, non-text files without risking the small, important text-based files stored here.
+It contains:
 
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+-   /data folder with tables listing the CNVs evaluated
+-   /src folder with R codes to scrape the data using Rvest library.
+
+The current version of the web can be found in:
+
+<https://gene.sfari.org/database/cnv/>
+
+Hopefully this makes it easier to researches in the field to obtain insights from this publicly avaliable data.
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
