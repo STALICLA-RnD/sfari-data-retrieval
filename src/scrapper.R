@@ -1,9 +1,23 @@
 
 
+#############################################################
+##  SFARI database web scrapping and curation of data.
+##  Sara Azidane Chenlo
+##  sara.azidane@gmail.com - 2019-2020
+############################################################
+
+suppressPackageStartupMessages(library(rvest))
+suppressPackageStartupMessages(library(tidyr))
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(readODS))
+
+#current_path <- getActiveDocumentContext()$path
+#setwd(dirname(current_path ))
+
 #---------------------------\\   Getting the regions in the given order for the first version  //----
 page <- list()
 # Get list of cytobands in SFARI base
-page <- read_ods(path = "./data/raw/CNV_regions/CNV.ods", 
+page <- read_ods(path = "./data/CNV_regions/CNV.ods", 
                  col_names = FALSE ,col_types = NA , na = "", skip = 0)
 urls <- c()
 for(i in page) {
@@ -21,7 +35,7 @@ CNV_regions <- as.vector(unlist(page))
 
 
 UPDATED_page <- list()
-UPDATED_page <- read_ods( path = "./data/raw/CNV_regions/UPDATED_CNV.ods", col_names = FALSE ,col_types = NA , na = "", skip = 0)
+UPDATED_page <- read_ods( path = "./data/CNV_regions/UPDATED_CNV.ods", col_names = FALSE ,col_types = NA , na = "", skip = 0)
 UPDATED_urls <- c()
 
 for(i in UPDATED_page) {
