@@ -1,6 +1,6 @@
 ![](images/STALICLA_logo_color.png){width="189"}
 
-# SFARI Gene Web Scrapper
+# SFARI Gene Data Retrieval
 
 [![](https://zenodo.org/badge/doi/XXXX/xxx.svg)](http://dx.doi.org/XXXX/xxx)
 
